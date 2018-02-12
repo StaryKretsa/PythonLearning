@@ -33,6 +33,11 @@ print(path)
 #--------------------------
 q = 'What\'s the air speed \
 velocity of an unladen swallow?'
-word = q[-8:-1]		#负数从后向前复制
+word = q[-8:-1]		#str[-1] = str[len(str) -1]
 q = q.replace(word, "rabbit")
 print(q)
+#--------------------------
+#string formating
+nums = [4,5,6]
+msg = "Numbers: {0} {1} {2}".format(nums[0], nums[1], nums[2])
+print(msg)
